@@ -1,6 +1,6 @@
-﻿class AdventOfCode
+﻿internal class AdventOfCode
 {
-    static void Main()
+    private static void Main()
     {
         // Update day
         const int day = 1;
@@ -8,21 +8,21 @@
         Console.WriteLine($"Advent of Code 2023 - Day {day}");
         Console.WriteLine();
 
-        var inputLines = File.ReadAllLines($"input.txt");
+        var inputLines = File.ReadAllLines($"input.txt").ToList();
 
         SolvePart1(inputLines);
         SolvePart2(inputLines);
 
     }
 
-    static void SolvePart1(string[] input)
+    private static void SolvePart1(List<string> input)
     {
         Console.WriteLine("Part 1:");
 
         // ...
     }
 
-    static void SolvePart2(string[] input)
+    private static void SolvePart2(List<string> input)
     {
         Console.WriteLine("Part 2:");
 
