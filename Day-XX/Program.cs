@@ -13,6 +13,8 @@
         SolvePart1(inputLines);
         SolvePart2(inputLines);
 
+        Console.WriteLine("Press enter to exit...");
+        Console.ReadLine();
     }
 
     private static void SolvePart1(List<string> input)
